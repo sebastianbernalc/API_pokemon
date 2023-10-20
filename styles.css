@@ -31,55 +31,36 @@ body {
     text-align: center;
 }
 
-.search-input {
+#search-input {
     width: 400px; /* Aumenta el ancho del cuadro de búsqueda según tus preferencias */
     height: 60px; /* Aumenta la altura del cuadro de búsqueda según tus preferencias */
     font-size: 16px; /* Aumenta el tamaño del texto dentro del cuadro de búsqueda según tus preferencias */
     font-family: "Pokemon2";
 }
 
-.search-button {
+#search-button {
     width: 100px; /* Aumenta el ancho del botón de búsqueda según tus preferencias */
     height: 60px; /* Aumenta la altura del botón de búsqueda según tus preferencias */
     font-size: 16px; /* Aumenta el tamaño del texto del botón según tus preferencias */
 }
 
-.container{
-    display:flex;
-    justify-content:center;
-    flex-wrap: wrap;  
-  }
-  
-  .user{
-    width: 230px;
-    vertical-align: top;
-    margin-right: 15px;
-    padding: 5px 5px;
-  }
-  
-  .user-pic{
-    width: 200px;
-    height:120px;
-    object-fit: cover;
-    margin-bottom: 12px;
-  }
-  
-.user-name{
-    color: rgb(0, 0, 0);
+.container {
+    padding-top: 5x;
+    text-align: center;
 }
-.user-email{
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 8px;
-    margin-bottom: 5px;
+
+.user-name {
+    font-size: 10px;
+    font-family: "Pokemon2";
+    color: #ffffff;
+}
+.user-mail {
+    font-size: 10px;
+    font-family: "Pokemon2";
+    color: #ffffff;
 }
 
 .boton{
 
     text-align: center;
 }
-.clase{
-    color: green;
-    font-size: 40px;
-    font-weight: bold;
-  }
