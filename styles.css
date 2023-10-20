@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: Pokemon2;
+    src: url(fonts/PokemonSolid.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pokemon2";
+}
+
+body {
+    height: 100vh;
+    background-color: #000000;
+    background-image: url('https://images.unsplash.com/photo-1638613067237-b1127ef06c00?auto=format&fit=crop&q=80&w=1332&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    width: 50%; /* Ancho deseado */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.contenedor {
+    text-align: center;
+}
+.search {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.search-input {
+    width: 400px; /* Aumenta el ancho del cuadro de búsqueda según tus preferencias */
+    height: 60px; /* Aumenta la altura del cuadro de búsqueda según tus preferencias */
+    font-size: 16px; /* Aumenta el tamaño del texto dentro del cuadro de búsqueda según tus preferencias */
+    font-family: "Pokemon2";
+}
+
+.search-button {
+    width: 100px; /* Aumenta el ancho del botón de búsqueda según tus preferencias */
+    height: 60px; /* Aumenta la altura del botón de búsqueda según tus preferencias */
+    font-size: 16px; /* Aumenta el tamaño del texto del botón según tus preferencias */
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;  
+  }
+  
+  .user{
+    width: 230px;
+    vertical-align: top;
+    margin-right: 15px;
+    padding: 5px 5px;
+  }
+  
+  .user-pic{
+    width: 200px;
+    height:120px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+  
+.user-name{
+    color: rgb(0, 0, 0);
+}
+.user-email{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+
+.boton{
+
+    text-align: center;
+}
+.clase{
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+  }
