@@ -1,3 +1,4 @@
+
 const boton = document.querySelector("button");
 const text_input = document.querySelector("input");
 
@@ -50,34 +51,29 @@ async function getDataFromApiResponse(response) {
   const nombre = apiResponse.name;
   const edad = apiResponse.order;
   const body = document.querySelector("header");
+
   const contenedor = document.createElement("div");
   contenedor.setAttribute("class", "container");
 
+  const card = document.createElement("div");
+  card.setAttribute("class", "card");
 
-  const user = document.createElement("div");
-  user.setAttribute("class", "user");
+  
 
-
-  const userImg = document.createElement("div");
-  userImg.setAttribute("class", "user-pic");
   const img = document.createElement("img");
-  img.style.maxWidth = "200px";
   img.setAttribute("src", imagen.other.home.front_default);
-  const userName = document.createElement("div");
-  userName.setAttribute("class", "user-name");
-  const userEmail = document.createElement("div");
-  userEmail.setAttribute("class", "user-mail");
+
   const fullName = document.createElement("p");
   fullName.innerHTML = `<strong>Name: </strong> ${nombre}`;
+  
   const email = document.createElement("p");
   email.innerHTML = `<strong>Email: </strong>${edad}`;
-  userName.appendChild(fullName);
-  userEmail.appendChild(email);
-  userImg.appendChild(img);
-  user.appendChild(userImg);
-  user.appendChild(userName);
-  user.appendChild(userEmail);
-  contenedor.appendChild(user);
+
+
+  card.appendChild(img);
+  card.appendChild(fullName);
+  card.appendChild(email);
+  contenedor.appendChild(card);
 
   body.appendChild(contenedor);
 }

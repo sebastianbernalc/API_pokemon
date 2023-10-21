@@ -45,22 +45,38 @@ body {
 }
 
 .container {
-    padding-top: 5x;
+    padding-top: 5px;
     text-align: center;
+    
 }
 
-.user-name {
-    font-size: 10px;
-    font-family: "Pokemon2";
-    color: #ffffff;
-}
-.user-mail {
-    font-size: 10px;
-    font-family: "Pokemon2";
-    color: #ffffff;
-}
+
+
 
 .boton{
-
     text-align: center;
 }
+
+.card {
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    margin: 20px;
+    display: inline-block;
+    font-family: "Pokemon2";
+    background-image: url('target.png');
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-position: center;
+}
+
+img {
+    width: 210px;
+    height: 210px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+
+
