@@ -1,13 +1,13 @@
 
 @font-face {
-    font-family: Pokemon2;
-    src: url(fonts/PokemonSolid.ttf);
+    font-family: SHOUTER;
+    src: url(fonts/SHOUTER.ttf);
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Pokemon2";
+    font-family: "SHOUTER";
 }
 
 body {
@@ -26,6 +26,9 @@ body {
 .contenedor {
     text-align: center;
 }
+.contenedor2 {
+    text-align: center;
+}
 .search {
     padding-top: 50px;
     text-align: center;
@@ -36,33 +39,33 @@ body {
     height: 60px; /* Aumenta la altura del cuadro de búsqueda según tus preferencias */
     font-size: 16px; /* Aumenta el tamaño del texto dentro del cuadro de búsqueda según tus preferencias */
     font-family: "Pokemon2";
+    border-radius: 12px;
 }
 
 #search-button {
     width: 100px; /* Aumenta el ancho del botón de búsqueda según tus preferencias */
     height: 60px; /* Aumenta la altura del botón de búsqueda según tus preferencias */
-    font-size: 16px; /* Aumenta el tamaño del texto del botón según tus preferencias */
+    font-size: 20px; /* Aumenta el tamaño del texto del botón según tus preferencias */
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 .container {
     padding-top: 5px;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 
-
-
-.boton{
-    text-align: center;
-}
 
 .card {
+    display: flex; /* Utilizar flexbox para centrar verticalmente */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
     width: 300px;
     height: 380px;
     border-radius: 10px;
     box-shadow: 5px 5px 20px black;
-    margin: 20px;
+    margin: 0px;
     display: inline-block;
     font-family: "Pokemon2";
     background-image: url('target.png');
@@ -72,11 +75,82 @@ body {
 }
 
 img {
+    text-align: center;
+    align-items: center;
+    margin-top: 0px;
     width: 210px;
     height: 210px;
     border-radius: 10px 10px 0px 0px;
+}
+
+
+.info{
+    margin-top: 15px;
+    height: 100px;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.card h {
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    color:rgb(0, 0, 0) ;
+    text-shadow: 1px 1px 2px rgb(107, 115, 219);
+}
+
+.info p{
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgb(107, 115, 219);
+
     
 }
+
+.ability1{
+    align-items: center;
+    padding-right: 120px;
+    font-size: 10px;
+    margin-top: 8px;
+    height: 20px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgb(107, 115, 219);
+}
+
+.ability2{
+    font-size: 10px;
+    align-items: center;
+    padding-right: 120px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgb(107, 115, 219);
+}
+
+.evol{
+    margin-top: 5px;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+
+
+.homeButton{
+    position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px; /* Ajusta el ancho deseado del botón */
+  height: 100px; /* Ajusta la altura deseada del botón */
+  background-image: url('home.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el botón */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen en el botón */
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
 
 
 
